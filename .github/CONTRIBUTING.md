@@ -6,6 +6,8 @@ Welcome to the Lightning AI Dev community!
 
 Lightning AI is the first operatings system for AI. Build state-of-the art models with Lightning Trainer and use them inside Lightning Apps (end-to-end ML systems).
 
+![](/assets/ecosystem.png)
+
 These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 We welcome any kind of contribution to our software, from simple comment or question to a full fledged pull request. Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
