@@ -1,5 +1,7 @@
 # Contributing
 
+TODO: the guidelines to be updated for LAI DevRel community
+
 Welcome to the Lightning AI Dev community! We're building the most advanced research platform on the planet to implement the latest, best practices
 and integrations that the amazing PyTorch team and other research organization rolls out!
 
