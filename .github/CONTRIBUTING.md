@@ -1,73 +1,32 @@
-# Contributing
+# Contributing Guidelines
 
-TODO: the guidelines to be updated for LAI DevRel community
+👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-Welcome to the Lightning AI Dev community! We're building the most advanced research platform on the planet to implement the latest, best practices
-and integrations that the amazing PyTorch team and other research organization rolls out!
+Welcome to the Lightning AI Dev community!
+
+Lightning AI is the first operatings system for AI. Build state-of-the art models with Lightning Trainer and use them inside Lightning Apps (end-to-end ML systems).
+
+These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+
+We welcome any kind of contribution to our software, from simple comment or question to a full fledged pull request. Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+A contribution can be one of the following cases:
+
+1. you have a question;
+2. you think you may have found a bug (including unexpected behavior);
+3. you want to make some kind of change to the code base (e.g. to fix a bug, to add a new feature, to update documentation);
+4. you want to make a new release of the code base.
 
 If you are new to open source, check out [this blog to get started with your first Open Source contribution](https://devblog.pytorchlightning.ai/quick-contribution-guide-86d977171b3a).
 
-## Main Core Value: One less thing to remember
+## You have a question
+1. Use the search functionality here to see if someone already filed the same issue or check out Docs.
+1. If your issue search did not yield any relevant results, make a new issue.
+1. Apply the "Question" label; apply other labels when relevant.
+1. You can join our [Slack group](https://join.slack.com/t/pytorch-lightning/shared_invite/zt-1dm4phlc0-84Jv9_8Mp_tWraICOJ467Q) as well.
 
-Simplify the API as much as possible from the user perspective.
-Any additions or improvements should minimize the things the user needs to remember.
-
-For example: One benefit of the `validation_step` is that the user doesn't have to remember to set the model to .eval().
-This helps users avoid all sorts of subtle errors.
-
-## Lightning Design Principles
-
-We encourage all sorts of contributions you're interested in adding! When coding for Lightning, please follow these principles.
-
-### No PyTorch Interference
-
-We don't want to add any abstractions on top of pure PyTorch.
-This gives researchers all the control they need without having to learn yet another framework.
-
-### Simple Internal Code
-
-It's useful for users to look at the code and understand very quickly what's happening.
-Many users won't be engineers. Thus we need to value clear, simple code over condensed ninja moves.
-While that's super cool, this isn't the project for that :)
-
-### Force User Decisions To Best Practices
-
-There are 1,000 ways to do something. However, eventually one popular solution becomes standard practice, and everyone follows.
-We try to find the best way to solve a particular problem, and then force our users to use it for readability and simplicity.
-A good example is accumulated gradients.
-There are many different ways to implement it, we just pick one and force users to use it.
-A bad forced decision would be to make users use a specific library to do something.
-
-When something becomes a best practice, we add it to the framework. This is usually something like bits of code in utils or in the model file that everyone keeps adding over and over again across projects. When this happens, bring that code inside the trainer and add a flag for it.
-
-### Simple External API
-
-What makes sense to you may not make sense to others. When creating an issue with an API change suggestion, please validate that it makes sense for others.
-Treat code changes the way you treat a startup: validate that it's a needed feature, then add if it makes sense for many people.
-
-### Backward-compatible API
-
-We all hate updating our deep learning packages because we don't want to refactor a bunch of stuff. In Lightning, we make sure every change we make which could break an API is backward compatible with good deprecation warnings.
-
-**You shouldn't be afraid to upgrade Lightning :)**
-
-### Gain User Trust
-
-As a researcher, you can't have any part of your code going wrong. So, make thorough tests to ensure that every implementation of a new trick or subtle change is correct.
-
-### Interoperability
-
-Have a favorite feature from other libraries like fast.ai or transformers? Those should just work with lightning as well. Grab your favorite model or learning rate scheduler from your favorite library and run it in Lightning.
 
 ## Guidelines
-
-### Developments scripts
-
-To build the documentation locally, simply execute the following commands from project root (only for Unix):
-
-- `make clean` cleans repo from temp/generated files
-- `make docs` builds documentation under _docs/build/html_
-- `make test` runs all project's tests with coverage
 
 ### Original code
 
