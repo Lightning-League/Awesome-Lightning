@@ -38,6 +38,12 @@ Learn more about Lightning App [here](https://youtu.be/RbU0CROL8TM).
 ### Spam ❌
 **AVOID SUBMITTING LOW-QUALITY PULL/MERGE REQUESTS.**
 
+Some common examples of spam PR:
+* Fixing a typo
+* Having multiple PRs with same code change
+* Removing whitespaces
+* Automated PRs and image optimizations
+
 Learn what is a spam pull request [here](https://hacktoberfest.com/participation/#spam).
 
 ## Resources 📚
