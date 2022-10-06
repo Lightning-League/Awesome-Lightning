@@ -1,7 +1,6 @@
-
 # Contributing
 
-Welcome to the PyTorch Lightning community! We're building the most advanced research platform on the planet to implement the latest, best practices
+Welcome to the Lightning AI Dev community! We're building the most advanced research platform on the planet to implement the latest, best practices
 and integrations that the amazing PyTorch team and other research organization rolls out!
 
 If you are new to open source, check out [this blog to get started with your first Open Source contribution](https://devblog.pytorchlightning.ai/quick-contribution-guide-86d977171b3a).
@@ -134,32 +133,3 @@ We welcome any useful contribution! For your convenience here's a recommended wo
 
    - **\[blocked by #<number>\]** if your work is dependent on other PRs.
    - **\[wip\]** when you start to re-edit your work, mark it so no one will accidentally merge it in meantime.
-
-
-# Contributors Gallery 💜
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center"><a href="http://aniketmaurya.com"><img src="https://avatars.githubusercontent.com/u/21018714?v=4?s=100" width="100px;" alt="Aniket Maurya"/><br /><sub><b>Aniket Maurya</b></sub></a><br /><a href="https://github.com/Lightning-AI-Dev/Awesome-Lightning/commits?author=aniketmaurya" title="Documentation">📖</a> <a href="#maintenance-aniketmaurya" title="Maintenance">🚧</a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/naiyarah"><img src="https://avatars.githubusercontent.com/u/5947670?v=4?s=100" width="100px;" alt="Naiyarah Hussain"/><br /><sub><b>Naiyarah Hussain</b></sub></a><br /><a href="#maintenance-naisofly" title="Maintenance">🚧</a> <a href="#projectManagement-naisofly" title="Project Management">📆</a> <a href="#mentoring-naisofly" title="Mentoring">🧑‍🏫</a></td>
-    </tr>
-  </tbody>
-  <tfoot>
-    
-  </tfoot>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
