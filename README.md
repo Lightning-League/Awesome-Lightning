@@ -26,7 +26,7 @@ ______________________________________________________________________
 
 # Awesome Lightning
 
-**Participate in [HacktoberFest](https://hacktoberfest.com/) by building some awesome Lightning Apps and Components. [Learn more](./docs/hacktoberfest-2022/index.md).**
+**Participate in HacktoberFest by building some awesome Lightning Apps and Components. [Learn more](./docs/hacktoberfest-2022/index.md).**
 
 ## Latest ⚡️
 
@@ -54,4 +54,4 @@ ______________________________________________________________________
 
 See the [Contributors Gallery 💜](./CONTRIBUTORS.md)
 
-Contributions of any kind are welcome! It should follow the [code of conduct](./.github/CODE_OF_CONDUCT.md). Learn how to make your [first contribution here](https://devblog.pytorchlightning.ai/quick-contribution-guide-86d977171b3a).
+Contributions of any kind are welcome! Please go through the [Contributing Guidelines](./.github/CONTRIBUTING.md). Learn how to make your [first contribution here](https://devblog.pytorchlightning.ai/quick-contribution-guide-86d977171b3a).
