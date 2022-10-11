@@ -1,0 +1,7 @@
+easyocr 
+gradio 
+lightning 
+pandas 
+Pillow 
+requests 
+torch 
