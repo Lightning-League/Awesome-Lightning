@@ -11,13 +11,6 @@ import lightning as L
 from lightning.app.components.serve import ServeGradio
 import easyocr
 
-torch.hub.download_url_to_file(
-    "https://github.com/JaidedAI/EasyOCR/raw/master/examples/english.png", "english.png"
-)
-torch.hub.download_url_to_file(
-    "https://github.com/JaidedAI/EasyOCR/raw/master/examples/chinese.jpg", "chinese.jpg"
-)
-torch.hub.download_url_to_file("https://i.imgur.com/mwQFd7G.jpeg", "Hindi.jpeg")
 
 choices = [
     "abq",
@@ -144,6 +137,13 @@ class LitGradio(ServeGradio):
         return self.model(image, text)
 
     def build_model(self):
+        torch.hub.download_url_to_file(
+            "https://github.com/JaidedAI/EasyOCR/raw/master/examples/english.png", "english.png"
+        )
+        torch.hub.download_url_to_file(
+            "https://github.com/JaidedAI/EasyOCR/raw/master/examples/chinese.jpg", "chinese.jpg"
+        )
+        torch.hub.download_url_to_file("https://i.imgur.com/mwQFd7G.jpeg", "Hindi.jpeg")
         return self.inference
 
 
@@ -156,7 +156,7 @@ class RootFlow(L.LightningFlow):
         self.lit_gradio.run()
 
     def configure_layout(self):
-        return [{"name": "home", "content": self.lit_gradio}]
+        return [{"name": "home", "content": self.lit_gradio.url}]
 
 
 app = L.LightningApp(RootFlow())
