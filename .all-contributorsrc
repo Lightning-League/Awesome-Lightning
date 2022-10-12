@@ -26,6 +26,15 @@
         "projectManagement",
         "mentoring"
       ]
+    },
+    {
+      "login": "bibhabasumohapatra",
+      "name": "Bibhabasu Mohapatra",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68384968?v=4",
+      "profile": "https://github.com/bibhabasumohapatra",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
