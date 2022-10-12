@@ -1,7 +1,7 @@
 easyocr==1.6.2
-gradio==3.3.1
-pandas==1.4.3
+gradio==3.4.1
+lightning==2022.10.7
+pandas==0.5.0
 Pillow==9.2.0
 requests==2.28.1
 torch==1.12.1
-lightning
