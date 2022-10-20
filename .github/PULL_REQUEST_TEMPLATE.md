@@ -4,6 +4,7 @@
 - [ ] Did you read the [contributor guideline](https://github.com/Lightning-AI/pytorch-lightning/blob/main/.github/CONTRIBUTING.md), Pull Request section?
 - [ ] Did you pin the dependency versions?
 - [ ] Does this work locally and on cloud?
+- [ ] Did you add instructions to run the App?
 - [ ] Did you write any new necessary tests?
 
 ## What does this PR do?
