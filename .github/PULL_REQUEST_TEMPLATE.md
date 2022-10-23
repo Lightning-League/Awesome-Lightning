@@ -1,7 +1,7 @@
 # Before submitting
 
 - [ ] Was this discussed/approved via a Github issue? (no need for typos and docs improvements)
-- [ ] Did you read the [contributor guideline](https://github.com/Lightning-AI/pytorch-lightning/blob/main/.github/CONTRIBUTING.md), Pull Request section?
+- [ ] Did you read the [contributor guideline](https://github.com/Lightning-AI-Dev/Awesome-Lightning/blob/main/docs/hacktoberfest-2022/index.md#hacktoberfest-2022), Pull Request section?
 - [ ] Did you pin the dependency versions?
 - [ ] Does this work locally and on cloud?
 - [ ] Did you add instructions to run the App?
