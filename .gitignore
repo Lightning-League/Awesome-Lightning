@@ -374,4 +374,3 @@ wandb/
 flagged/
 .python-version
 github/
-*.txt
