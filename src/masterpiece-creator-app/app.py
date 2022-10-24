@@ -34,5 +34,16 @@ class MasterpieceCreator(ServeGradio):
       import discoart
       return discoart
 
+class RootFlow(L.LightningFlow):
+  def __init__(self):
+     super().__init__()
+     self.work = MasterpieceCreator(cloud_compute=L.CloudCompute("gpu"))
+  
+  def run(self, *args, **kwargs) -> None:
+     self.work.run()
+  
+  def configure_layout(self):
+     return {"name": "DiscoArt", "content": self.work.url}
 
-app = L.LightningApp(MasterpieceCreator(cloud_compute=L.CloudCompute("gpu")))
+
+app = L.LightningApp(RootFlow())
