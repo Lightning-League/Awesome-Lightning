@@ -116,6 +116,10 @@ class LitGradio(ServeGradio):
         ["Hindi.jpeg", ["hi", "en"]],
     ]
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._cache_model = {}
+
     def draw_boxes(self, image, bounds, color="yellow", width=2):
         draw = ImageDraw.Draw(image)
         for bound in bounds:
@@ -124,7 +128,11 @@ class LitGradio(ServeGradio):
         return image
 
     def inference(self, img, lang):
-        reader = easyocr.Reader(lang)
+        if lang in self._cache_model:
+            reader = self._cache_model[lang]
+        else:
+            reader = easyocr.Reader(lang)
+        self._cache_model[lang] = reader
         bounds = reader.readtext(img.name)
         im = Image.open(img.name)
         self.draw_boxes(im, bounds)
