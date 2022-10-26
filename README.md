@@ -12,14 +12,17 @@ ______________________________________________________________________
   <a href="https://lightning.ai/apps">App Gallery</a> •
   <a href="https://lightning.ai/pages/ambassador-program/">Lightning League</a> •
   <a href="https://lightning.ai/pages/blog/">Blog</a> •
-  <a href="https://lightning.ai/">Website</a> 
-  
+  <a href="https://lightning.ai/">Website</a>
+
 </p>
 
 [![App Gallery](https://bit.ly/3xTcccO)](https://lightning.ai/apps)
 [![Slack](https://img.shields.io/badge/slack-chat-green.svg?logo=slack)](https://www.pytorchlightning.ai/community)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](./CONTRIBUTORS.md)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 </div>
@@ -32,26 +35,26 @@ Awesome Lightning is a collection of Apps and components built by the Lightning 
 
 ## Latest ⚡️
 
-| Project | Author | Demo |
-| ------- | ------ | ----- |
-|[Speech Search Engine with OpenAI Whisper](https://github.com/Nachimak28/LAI-voice-search-openai-whisper-demo) | @Nachimak28 | [App Link](https://01gdsrn3rf7qgev31g8gvea1gh.litng-ai-03.litng.ai/view/home) |
-| [Data Drift Detector](https://lightning.ai/component/UX5swWI252-Data%20Drift%20Detector) | @Nachimak28 |
-| [Model Performance Analysis](https://lightning.ai/component/VC3rlVI199-Model%20Performance%20Analysis) | @Nachimak28 |
-| [Deepset Haystack QnA system](./src/deepset/README.md) | @aniketmaurya |
-
+| Project                                                                                                        | Author        | Demo                                                                          |
+| -------------------------------------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------------- |
+| [Speech Search Engine with OpenAI Whisper](https://github.com/Nachimak28/LAI-voice-search-openai-whisper-demo) | @Nachimak28   | [App Link](https://01gdsrn3rf7qgev31g8gvea1gh.litng-ai-03.litng.ai/view/home) |
+| [Data Drift Detector](https://lightning.ai/component/UX5swWI252-Data%20Drift%20Detector)                       | @Nachimak28   |                                                                               |
+| [Model Performance Analysis](https://lightning.ai/component/VC3rlVI199-Model%20Performance%20Analysis)         | @Nachimak28   |                                                                               |
+| [Deepset Haystack QnA system](./src/deepset/README.md)                                                         | @aniketmaurya |                                                                               |
 
 ## Idea TODO list 💡
 
 ### App Ideas 🚀
-* An OCR API ([EasyOCR](https://github.com/JaidedAI/EasyOCR))
 
+- An OCR API ([EasyOCR](https://github.com/JaidedAI/EasyOCR))
 
 ### Integration Ideas 🛠
-* [MLFlow](https://mlflow.org/)
-* [PyTorch Geometric GraphGym](https://pytorch-geometric.readthedocs.io/en/latest/notes/graphgym.html)
-* [Kafka](https://github.com/aniketmaurya/lit-pubsub)
-* [Jina AI DocArray](https://github.com/jina-ai/jina)
-* [TorchServe](https://pytorch.org/serve/index.html)
+
+- [MLFlow](https://mlflow.org/)
+- [PyTorch Geometric GraphGym](https://pytorch-geometric.readthedocs.io/en/latest/notes/graphgym.html)
+- [Kafka](https://github.com/aniketmaurya/lit-pubsub)
+- [Jina AI DocArray](https://github.com/jina-ai/jina)
+- [TorchServe](https://pytorch.org/serve/index.html)
 
 ## Community ✨
 

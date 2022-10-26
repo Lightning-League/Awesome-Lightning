@@ -1,36 +1,34 @@
+from functools import partial
+
 import gradio as gr
 import lightning as L
-from functools import partial
 from lightning.app.components.serve import ServeGradio
 from lightning.app.storage import Drive
 
 
 class MasterpieceCreator(ServeGradio):
     inputs = [
-      gr.components.Textbox(label="print your prompt here", elem_id="label"),
-      gr.components.Dropdown(
-        label="choose you model",
-        choices=[
-          'PulpSciFiDiffusion',
-          'pixel_art_diffusion_hard_256',
-          'pixel_art_diffusion_soft_256',
-          'pixelartdiffusion4k',
-          'watercolordiffusion',
-          'watercolordiffusion_2',
-          'portrait_generator_v1.5',
-          'portrait_generator_v001_ema_0.9999_1MM',
-          'FeiArt_Handpainted_CG_Diffusion',
-          'Ukiyo-e_Diffusion_All_V1.by_thegenerativegeneration'
-        ]
-      ),
-      gr.components.Number(value=250, label="number of steps"),
+        gr.components.Textbox(label="print your prompt here", elem_id="label"),
+        gr.components.Dropdown(
+            label="choose you model",
+            choices=[
+                "PulpSciFiDiffusion",
+                "pixel_art_diffusion_hard_256",
+                "pixel_art_diffusion_soft_256",
+                "pixelartdiffusion4k",
+                "watercolordiffusion",
+                "watercolordiffusion_2",
+                "portrait_generator_v1.5",
+                "portrait_generator_v001_ema_0.9999_1MM",
+                "FeiArt_Handpainted_CG_Diffusion",
+                "Ukiyo-e_Diffusion_All_V1.by_thegenerativegeneration",
+            ],
+        ),
+        gr.components.Number(value=250, label="number of steps"),
     ]
-    outputs = gr.components.Image(
-        type="auto",
-        label="Your masterpiece will be here"
-      )
+    outputs = gr.components.Image(type="auto", label="Your masterpiece will be here")
     enable_queue = True
-    css = '''
+    css = """
       #component-6 {
         flex: 1;
         flex-grow: 1 !important;
@@ -77,7 +75,7 @@ class MasterpieceCreator(ServeGradio):
         .gr-input:hover {
           border-color: rgb(121, 46, 229);
         }
-    '''
+    """
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -112,14 +110,15 @@ class MasterpieceCreator(ServeGradio):
         fn = partial(self.predict, *args, **kwargs)
         fn.__name__ = self.predict.__name__
         gr.Interface(
-          fn=fn, inputs=self.inputs,
-          outputs=self.outputs,
-          examples=self.examples,
-          css=self.css
+            fn=fn,
+            inputs=self.inputs,
+            outputs=self.outputs,
+            examples=self.examples,
+            css=self.css,
         ).launch(
-          server_name=self.host,
-          server_port=self.port,
-          enable_queue=self.enable_queue,
+            server_name=self.host,
+            server_port=self.port,
+            enable_queue=self.enable_queue,
         )
 
 
