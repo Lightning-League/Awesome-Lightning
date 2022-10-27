@@ -47,6 +47,7 @@ Awesome Lightning is a collection of Apps and components built by the Lightning 
 ### App Ideas 🚀
 
 - An OCR API ([EasyOCR](https://github.com/JaidedAI/EasyOCR))
+- building lightning snippets plugin for vs and jetbarins 
 
 ### Integration Ideas 🛠
 
