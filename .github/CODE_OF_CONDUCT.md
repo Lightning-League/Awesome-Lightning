@@ -1,4 +1,5 @@
 <!-- Same as https://raw.githubusercontent.com/Lightning-AI/lightning/master/.github/CODE_OF_CONDUCT.md -->
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
