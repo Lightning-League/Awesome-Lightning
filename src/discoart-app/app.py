@@ -109,10 +109,11 @@ class MasterpieceCreator(ServeGradio):
         fn = partial(self.predict, *args, **kwargs)
         fn.__name__ = self.predict.__name__
         model = gr.Interface(
-          fn=fn, inputs=self.inputs,
-          outputs=self.outputs,
-          examples=self.examples,
-          css=self.css
+            fn=fn,
+            inputs=self.inputs,
+            outputs=self.outputs,
+            examples=self.examples,
+            css=self.css,
         )
         model.queue(concurrency_count=3)
         model.launch(
