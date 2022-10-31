@@ -27,7 +27,6 @@ class MasterpieceCreator(ServeGradio):
         gr.components.Number(value=250, label="number of steps"),
     ]
     outputs = gr.components.Image(type="auto", label="Your masterpiece will be here")
-    enable_queue = True
     css = """
       #component-6 {
         flex: 1;
@@ -109,16 +108,17 @@ class MasterpieceCreator(ServeGradio):
             self._model = self.build_model()
         fn = partial(self.predict, *args, **kwargs)
         fn.__name__ = self.predict.__name__
-        gr.Interface(
+        interface = gr.Interface(
             fn=fn,
             inputs=self.inputs,
             outputs=self.outputs,
             examples=self.examples,
             css=self.css,
-        ).launch(
+        )
+        interface.queue(concurrency_count=3)
+        interface.launch(
             server_name=self.host,
             server_port=self.port,
-            enable_queue=self.enable_queue,
         )
 
 
