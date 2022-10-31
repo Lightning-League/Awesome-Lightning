@@ -47,6 +47,7 @@ Awesome Lightning is a collection of Apps and components built by the Lightning 
 ### App Ideas 🚀
 
 - An OCR API ([EasyOCR](https://github.com/JaidedAI/EasyOCR))
+- Retail Product Recognition ([ref](https://www.width.ai/post/product-recognition))
 
 ### Integration Ideas 🛠
 
