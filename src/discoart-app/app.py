@@ -108,15 +108,15 @@ class MasterpieceCreator(ServeGradio):
             self._model = self.build_model()
         fn = partial(self.predict, *args, **kwargs)
         fn.__name__ = self.predict.__name__
-        model = gr.Interface(
+        interface = gr.Interface(
             fn=fn,
             inputs=self.inputs,
             outputs=self.outputs,
             examples=self.examples,
             css=self.css,
         )
-        model.queue(concurrency_count=3)
-        model.launch(
+        interface.queue(concurrency_count=3)
+        interface.launch(
             server_name=self.host,
             server_port=self.port,
         )
