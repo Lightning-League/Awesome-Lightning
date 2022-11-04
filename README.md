@@ -37,6 +37,8 @@ Awesome Lightning is a collection of Apps and components built by the Lightning 
 
 | Project                                                                                                        | Author        | Demo                                                                          |
 | -------------------------------------------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------------- |
+| [OCR App with EasyOCR](https://github.com/Lightning-AI-Dev/Awesome-Lightning/tree/main/src/EasyOCR-app) | @bibhabasumohapatra   |                                                                              |
+| [DiscoArt App](https://github.com/Lightning-AI-Dev/Awesome-Lightning/tree/main/src/discoart-app) | @KogayIrina   |  
 | [Speech Search Engine with OpenAI Whisper](https://github.com/Nachimak28/LAI-voice-search-openai-whisper-demo) | @Nachimak28   | [App Link](https://01gdsrn3rf7qgev31g8gvea1gh.litng-ai-03.litng.ai/view/home) |
 | [Data Drift Detector](https://lightning.ai/component/UX5swWI252-Data%20Drift%20Detector)                       | @Nachimak28   |                                                                               |
 | [Model Performance Analysis](https://lightning.ai/component/VC3rlVI199-Model%20Performance%20Analysis)         | @Nachimak28   |                                                                               |
