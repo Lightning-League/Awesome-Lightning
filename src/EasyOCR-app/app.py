@@ -99,7 +99,6 @@ choices = [
 
 
 class LitGradio(ServeGradio):
-
     inputs = [
         gr.components.Image(type="file", label="Input"),
         gr.components.CheckboxGroup(
@@ -132,7 +131,6 @@ class LitGradio(ServeGradio):
         return ["result.jpg", pd.DataFrame(bounds).iloc[:, 1:]]
 
     def predict(self, image, text):
-
         return self.model(image, text)
 
     def build_model(self):
